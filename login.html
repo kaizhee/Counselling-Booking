@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login/Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>INTI Counselling Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Student Login/Register</a></li>
+                <li><a href="profiles.html">Counsellor Profiles</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Student Login / Register</h2>
+            <form action="/submit-login" method="post">
+                <h3>Login</h3>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#register">Register here</a></p>
+            </form>
+            <form id="register" action="/submit-register" method="post">
+                <h3>Register</h3>
+                <label for="register-name">Name:</label>
+                <input type="text" id="register-name" name="name" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 INTI Counselling Services</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Student Login/Register</a></li>
+                <li><a href="profiles.html">Counsellor Profiles</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="manage-counsellors">
+            <h2>Manage Counsellors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Specialty</th>
+                        <th>Experience</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>Psychologist</td>
+                        <td>5 years</td>
+                        <td>
+                            <a href="edit-counsellor.html?id=1">Edit</a> | 
+                            <a href="delete-counsellor.html?id=1">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="manage-students">
+            <h2>Manage Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr>
+                        <td>1</td>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@example.com</td>
+                        <td>
+                            <a href="view-student.html?id=1">View</a> | 
+                            <a href="delete-student.html?id=1">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 INTI Counselling System</p>
+    </footer>
+</body>
+</html>

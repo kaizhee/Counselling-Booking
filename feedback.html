@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Student Login/Register</a></li>
+                <li><a href="profiles.html">Counsellor Profiles</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="feedback-form">
+            <h2>Provide Your Feedback</h2>
+            <form action="submit-feedback.html" method="post">
+                <fieldset>
+                    <legend>Feedback Details</legend>
+
+                    <label for="student-name">Your Name:</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                    <br>
+
+                    <label for="session-date">Session Date:</label>
+                    <input type="date" id="session-date" name="session-date" required>
+                    <br>
+
+                    <label for="counsellor-name">Counsellor's Name:</label>
+                    <input type="text" id="counsellor-name" name="counsellor-name" required>
+                    <br>
+
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <br>
+
+                    <label for="feedback">Comments:</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+                    <br>
+
+                    <button type="submit">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 INTI Counselling System</p>
+    </footer>
+</body>
+</html>
