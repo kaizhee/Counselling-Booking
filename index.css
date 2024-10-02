@@ -22,3 +22,25 @@
 .nav-link.active:hover {
     background-color: black;
 }
+
+/* Hero Section */
+section.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Services Section */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+}
